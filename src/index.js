@@ -2,19 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const names = [
-				{
-				id: 1, 
-				name: 'Henryk'
-				},
-				{
-				id: 2, 
-				name: 'Zdzisław'
-				},
-				{
-				id: 3, 
-				name: 'Janusz'
-				} 
-			   ];
+								{
+									id: 1, 
+									name: 'Henryk'
+								},
+								{
+									id: 2, 
+									name: 'Zdzisław'
+								},
+								{
+									id: 3, 
+									name: 'Janusz'
+								} 
+							 ];
 
 const element = (
   <div>
