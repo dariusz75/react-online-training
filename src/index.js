@@ -17,20 +17,27 @@ const element = (
 							  </thead>
 							  <tbody>
 				{events.map((arrayElement) => {
-      			return <tr>
+
+					const eventDate = new Date(arrayElement.date);
+					const todaysDate = Date.now();
+
+					if (eventDate >= todaysDate) {
+      			return (<tr>
 							      <td key={arrayElement.id}>{arrayElement.id}</td>
 							      <td>{arrayElement.name}</td>
 							      <td>{arrayElement.place}</td>
 							      <td>{arrayElement.date}</td>
 							      <td>{arrayElement.time}</td>
-							    </tr>
+							    </tr>);
+					}
+					return null;
 						})}
+						
 							  </tbody>
 							</table>
     
   </div>
 );
-
 
 
 ReactDOM.render(element, document.getElementById('root'));
