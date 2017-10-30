@@ -8,11 +8,11 @@ const element = (
     					<table className="table">
 							  <thead>
 							    <tr>
-							      <th scope="col">#</th>
-							      <th scope="col">Name</th>
-							      <th scope="col">Place</th>
-							      <th scope="col">Date</th>
-							      <th scope="col">Time</th>
+							      <th>#</th>
+							      <th>Name</th>
+							      <th>Place</th>
+							      <th>Date</th>
+							      <th>Time</th>
 							    </tr>
 							  </thead>
 							  <tbody>
