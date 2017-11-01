@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom';
 
 //import events from './data/events.json';
 import Events from './components/Events';
+import HomeComponent from './components/HomeComponent';
 
 
 
-
-
-ReactDOM.render(<Events />, document.getElementById('root'));
+ReactDOM.render(<HomeComponent />, document.getElementById('root'));
 
