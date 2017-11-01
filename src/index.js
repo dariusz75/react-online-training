@@ -8,5 +8,5 @@ import Events from './components/Events';
 
 
 
-ReactDOM.render(Events, document.getElementById('root'));
+ReactDOM.render(<Events />, document.getElementById('root'));
 
