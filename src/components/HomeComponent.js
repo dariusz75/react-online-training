@@ -5,15 +5,31 @@ class HomeComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-      counter: 0
+      name: 'Janusz', 
+      age: 57,
+      isActive: true
     };          
   }
  
   render() {
+
+    //const containerClass = this.state.isActive ? 'active' : 'inactive';
+    // INLINE FUNCTION SOLUTION
+
+    let containerClass; 
+
+    if (this.state.isActive === true) {
+      containerClass = 'active';
+    } else if (this.state.isActive === false) {
+       containerClass = 'inactive';
+    };
+
     return (
       <div>
-        <p>counter: {this.state.counter}</p>
-        <button onClick={() => this.setState({ counter: this.state.counter + 1 })}> increment </button>
+        <h1>Imię: <span className={containerClass}>{this.state.name}</span></h1>
+        <p>Wiek: {this.state.age}</p>
+        <button onClick={() => this.setState({ isActive: false })}>Deactive</button>
+        <button onClick={() => this.setState({ isActive: true })}>Active</button>
       </div>
     );
   }
